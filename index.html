@@ -9,7 +9,7 @@
 </head>
 <body style="margin: 0; overflow: hidden;">
     <a-scene embedded arjs>
-        <a-marker type="barcode" value="5" id="barcode-marker">
+        <a-marker preset="hiro" id="hiro-marker">
             <a-entity 
                 gltf-model="url(assets/naruto_uzumaki_running_animation.glb)" 
                 scale="0.5 0.5 0.5" 
@@ -33,7 +33,7 @@
     </a-scene>
 
     <script>
-        var marker = document.querySelector('#barcode-marker');
+        var marker = document.querySelector('#hiro-marker');
         var sound = document.querySelector('#naruto_alive');
 
         marker.addEventListener('markerFound', function() {
